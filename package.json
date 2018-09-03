@@ -1,0 +1,19 @@
+{
+  "name": "atomos",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "set DEBUG=* && tsc && node dist/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/debug": "0.0.30",
+    "@types/node": "^10.9.4",
+    "debug": "^3.1.0",
+    "discord.js": "^11.4.2",
+    "node-fetch": "^2.2.0"
+  }
+}

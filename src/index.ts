@@ -6,12 +6,12 @@ import { AtomosCommand } from './lib';
 import HelpCommand from './commands/help';
 import { V4MAPPED } from 'dns';
 const prefix = 'atom!'
-debug('prelaunch')(__dirname) // Not working!
-if (!fs.existsSync(path.join(__dirname, 'cred.secret.json'))) {
+debug('prelaunch')(process.cwd())
+if (!fs.existsSync(path.join(process.cwd(), 'cred.secret.json'))) {
     debug('prelaunch')('Credential file does not exist.')
     process.exit(1)
 }
-const cred: any = JSON.parse(fs.readFileSync(path.join(__dirname, 'cred.secret.json')).toString())
+const cred: any = JSON.parse(fs.readFileSync(path.join(process.cwd(), 'cred.secret.json')).toString())
 
 const client: Client = new Client();
 const dbg = debug('atomos-bot');

@@ -34,7 +34,6 @@ client.on('message', (message: Message) => {
     let msgParts: Array<string> = message.toString().split(' ');
     if (msgParts[0].startsWith(prefix)) {
         msgParts[0] = msgParts[0].replace(prefix, '')
-
         if (commands.has(msgParts[0])) {
             commands.get(msgParts[0])!.run(message) //Oh the beauty
         }

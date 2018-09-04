@@ -1,4 +1,4 @@
-import { Client, Collection, Message } from 'discord.js';
+import { Client, Collection, Message, ColorResolvable } from 'discord.js';
 
 class AtomosCommand {
     dclient: Client;
@@ -12,6 +12,9 @@ class AtomosCommand {
         throw new Error('This class may not be used directly.');
         //return '';
         // Implement in Command Class.
+    }
+    genRandomColor(): ColorResolvable {
+        return Math.random() * 16777215;
     }
 }
 

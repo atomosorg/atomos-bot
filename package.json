@@ -1,21 +1,24 @@
 {
-  "name": "atomos",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "start": "set DEBUG=* && gulp && tsc && node dist/index.js"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "@types/debug": "0.0.30",
-    "@types/node": "^10.9.4",
-    "debug": "^3.1.0",
-    "del": "^3.0.0",
-    "discord.js": "^11.4.2",
-    "gulp": "^3.9.1",
-    "node-fetch": "^2.2.0"
-  }
+    "name": "atomos",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "set DEBUG=* && npm run gulp && npm run tsc && node dist/index.js",
+        "gulp": "gulp",
+        "tsc": "tsc"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@types/debug": "0.0.30",
+        "@types/node": "^10.9.4",
+        "debug": "^3.1.0",
+        "del": "^3.0.0",
+        "discord.js": "^11.4.2",
+        "gulp": "^3.9.1",
+        "node-fetch": "^2.2.0",
+        "typescript": "^3.0.3"
+    }
 }
